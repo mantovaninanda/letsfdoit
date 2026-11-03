@@ -1,0 +1,27 @@
+# Fernanda Mantovani — UGC portfolio (fernandamantovani.com)
+# Built by GitHub Pages from the gh-pages branch (Jekyll 3.10, see Gemfile).
+
+title:       "Fernanda Mantovani | UGC Creator"
+description: "Miami-based UGC creator for wellness, nutrition and fitness brands. Bilingual English and Portuguese."
+url:         https://fernandamantovani.com
+baseurl:     ""
+lang:        en
+og_image:    og-default.jpg   # 1200x630 in assets/img/ (placeholder until her photos arrive)
+
+owner:
+  name:      "Fernanda Mantovani"
+  email:     ugcbynanda.mb@gmail.com
+  instagram: itsfernandamantovani
+  tiktok:    heyitsme.nanda
+  linkedin:  fernandamantovani
+  location:  Miami
+
+# Booking form (https://formspree.io). Leave empty to show the email button only.
+formspree_id: ""
+
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude: [Gemfile, Gemfile.lock, README.md, CLAUDE.md, vendor, .ruby-version, og]

@@ -1,0 +1,274 @@
+---
+layout: default
+---
+{% assign real_videos = site.data.videos %}
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div class="hero-reel">
+      <div class="reel-frame">
+        {% include ph.html label="Intro reel" ratio="9/16" tone="cream" %}
+      </div>
+      <span class="hit-play">↖ Hit play</span>
+    </div>
+    <div class="hero-copy">
+      <h1 class="hero-name"><span class="first">Fernanda</span><span class="last">Mantovani</span></h1>
+      <p class="hero-tag">Strategic UGC that connects brands to real people.</p>
+      <p class="hero-pill">Blending UX, psychology &amp; lifestyle to create content that makes <strong>real impact</strong>.</p>
+      <p class="hero-loc"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-7.2 7-12a7 7 0 1 0-14 0c0 4.8 7 12 7 12z" fill="currentColor"/><circle cx="12" cy="10" r="2.5" fill="#fff"/></svg> Miami</p>
+      <p class="hero-cred"><em><strong>UGC Mastery Academy</strong></em> graduate<br><span>Trained by Sydney Mohni: NYC billboard-featured creator</span></p>
+      <hr class="hero-rule">
+      {% include socials.html %}
+      <a class="btn" href="#contact">Book a UGC project</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLIENTS ============ -->
+<section class="clients">
+  <p class="eyebrow">Brands I've created UGC for</p>
+  <ul class="logo-wall">
+    {% for c in site.data.clients %}
+    <li>{% if c.logo != "" %}<img src="{{ '/assets/img/logos/' | append: c.logo | relative_url }}" alt="{{ c.name }}" loading="lazy">{% else %}<span>{{ c.name }}</span>{% endif %}</li>
+    {% endfor %}
+  </ul>
+</section>
+
+<!-- ============ FEATURED WORK ============ -->
+<section class="section work" id="work">
+  <div class="wrap">
+    <header class="section-head">
+      <h2 class="pill pill-blush">Featured UGC Work</h2>
+      <p class="sub">Strategic UGC designed to build trust, capture attention, and drive real engagement.</p>
+    </header>
+
+    <div class="filters" role="group" aria-label="Filter videos">
+      <button class="chip is-on" data-filter="all">All</button>
+      <button class="chip" data-filter="nutrition">Nutrition</button>
+      <button class="chip" data-filter="wellness">Wellness</button>
+      <button class="chip" data-filter="fitness">Fitness</button>
+      <button class="chip" data-filter="pet">Pet</button>
+    </div>
+
+    <div class="work-grid" id="work-grid">
+      {% for v in real_videos %}
+      <article class="card{% if v.featured %} featured{% endif %}" data-niche="{{ v.niche }}">
+        <div class="card-label">
+          <span class="pill pill-blush pill-sm">{{ v.format }}</span>
+          <span class="card-brand">{{ v.brand }}</span>
+        </div>
+        <div class="card-media">
+          {% if v.file != "" %}
+          <video controls controlsList="nodownload" playsinline preload="none"{% if v.poster %} poster="{{ '/assets/img/posters/' | append: v.poster | relative_url }}"{% endif %}>
+            <source src="{{ '/assets/video/' | append: v.file | relative_url }}" type="video/mp4">
+          </video>
+          {% else %}
+          <div class="ph ph-teal" style="aspect-ratio:9/16"><span>{{ v.brand }}{% if v.hook != "" %}<em>“{{ v.hook }}”</em>{% endif %}</span></div>
+          {% endif %}
+          {% unless v.client %}<span class="spec-tag">Spec ad</span>{% endunless %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    <button class="btn btn-ghost see-all" id="see-all">See all work</button>
+
+    <div class="cta-box">
+      <div class="cta-card">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+        <p>Looking for custom UGC for your brand?</p>
+      </div>
+      <a class="btn" href="#contact">Book a UGC project</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY BRANDS TRUST ME ============ -->
+<section class="section trust">
+  <div class="wrap">
+    <header class="section-head">
+      <h2 class="pill pill-mist">Why Brands Trust Me</h2>
+      <p class="sub">Content created with intention: blending strategy, authenticity, and audience insight.</p>
+    </header>
+    <div class="trust-grid">
+      <ul class="trust-list">
+        <li><strong>✔ Strategic UGC Creator</strong>Creating strategic content designed to build trust, capture attention, and support brand goals.</li>
+        <li><strong>✔ UX Research Background</strong>Understanding user behavior and audience psychology to create more effective content.</li>
+        <li><strong>✔ Consumer Psychology Approach</strong>Applying behavioral insights to craft strong hooks and relatable storytelling.</li>
+        <li><strong>✔ Storytelling &amp; Hooks</strong>Short-form videos designed to capture attention in the first seconds.</li>
+        <li><strong>✔ Lifestyle-Driven Content</strong>Authentic content that blends naturally into social media feeds.</li>
+        <li><strong>✔ Short-Form Video Focus</strong>Optimized for TikTok, Reels, and social-first platforms.</li>
+        <li><strong>✔ Professional &amp; Reliable</strong>Clear communication, structured workflow, and on-time delivery.</li>
+      </ul>
+      <div class="expect">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 3h4v3a2 2 0 1 0 0 4v0h3v4a2 2 0 1 1 0 4v3h-4a2 2 0 1 0-4 0H6v-4a2 2 0 1 1 0-4V10h4a2 2 0 1 0 0-4z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+        <h3>What Brands Can Expect:</h3>
+        <ul>
+          <li>✔ Authentic on-camera presence</li>
+          <li>✔ Clear product storytelling</li>
+          <li>✔ Social-first editing style</li>
+          <li>✔ Natural lifestyle integration</li>
+          <li>✔ Strategic messaging &amp; hooks</li>
+          <li>✔ Content designed to drive engagement</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHAT BRANDS SAY ============ -->
+<section class="section reviews" id="reviews">
+  <div class="wrap">
+    <header class="section-head">
+      <h2 class="pill pill-blush">What Brands Say</h2>
+      <p class="sub">Trusted for professionalism, collaboration, and a people-centered approach. <span class="stars" aria-label="5 stars">★★★★★</span></p>
+    </header>
+    <div class="quotes">
+      {% for t in site.data.testimonials %}
+      <figure class="quote{% cycle '', ' quote-right' %}">
+        <blockquote>“{{ t.quote }}”</blockquote>
+        <figcaption><strong>{{ t.name }}</strong>{% if t.role != "" %}, {{ t.role }}{% endif %} · {{ t.brand }}</figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+    <div class="center"><a class="btn" href="#contact">Book a UGC project</a></div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="section process">
+  <div class="wrap">
+    <header class="section-head">
+      <h2 class="pill pill-mist">How It Works</h2>
+      <p class="sub">Every video comes scripted, filmed and edited, ready to run as ads or organic content.</p>
+    </header>
+    <ol class="steps">
+      <li><span>1</span><strong>Brief</strong>You share the product, goals and audience.</li>
+      <li><span>2</span><strong>Concept &amp; script</strong>Hooks and a script for your approval.</li>
+      <li><span>3</span><strong>Film &amp; edit</strong>Shot in real life, edited social-first.</li>
+      <li><span>4</span><strong>One revision</strong>Included with every video.</li>
+      <li><span>5</span><strong>Delivery</strong>Ready to post or put spend behind.</li>
+    </ol>
+    <p class="addons"><strong>Add-ons:</strong> extra hook variations · raw footage · paid usage rights · Portuguese versions</p>
+  </div>
+</section>
+
+<!-- ============ PET UGC ============ -->
+<section class="section pets">
+  <div class="wrap">
+    <header class="section-head">
+      <h2 class="pill pill-mist">Pet UGC</h2>
+      <p class="sub">Content featuring real life moments with my two Pomeranian co-stars.<br><small>Perfect for pet, lifestyle, wellness, and everyday brands.</small></p>
+    </header>
+    <div class="pet-cards">
+      <div class="pet">
+        {% include ph.html label="Biscuit" ratio="1/1" tone="cream" %}
+        <div>
+          <h3>Biscuit 🐾</h3>
+          <p>The original member of our family. Biscuit loves toys, belly rubs, and staying close to his humans at all times. He's gentle, affectionate, and prefers people over other dogs, making him the perfect companion for cozy lifestyle and wellness content.</p>
+          <p class="traits"><strong>Mini traits:</strong> Toy lover · Affectionate personality · Cozy lifestyle vibes</p>
+        </div>
+      </div>
+      <div class="pet">
+        {% include ph.html label="Pompom" ratio="1/1" tone="cream" %}
+        <div>
+          <h3>Pompom 🐾</h3>
+          <p>Confident, curious, and always ready for the camera. Pompom has a playful personality and a "YOLO" attitude. She loves treats, naps in the coziest spots, and is naturally comfortable being filmed, perfect for playful and engaging pet content.</p>
+          <p class="traits"><strong>Mini traits:</strong> Camera lover · Playful energy · Treat-motivated</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ UGC PHOTOGRAPHY ============ -->
+<section class="section photos">
+  <div class="wrap">
+    <header class="section-head">
+      <h2 class="pill pill-cream">UGC Photography</h2>
+      <p class="sub">Natural lifestyle imagery, strategically designed to complement brand storytelling and social content.</p>
+    </header>
+    <div class="photo-grid">
+      {% for i in (1..10) %}
+      <div class="photo">{% include ph.html label="Photo" ratio="2/3" tone="cream" %}</div>
+      {% endfor %}
+    </div>
+    <div class="center"><a class="btn" href="#contact">Book a UGC project</a></div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section about" id="about">
+  <div class="wrap">
+    <header class="section-head">
+      <h2 class="pill pill-mist">About The Creator</h2>
+      <p class="sub">I create lifestyle-driven content designed to help brands connect with real audiences.</p>
+    </header>
+    <div class="about-grid">
+      <div class="about-photos">
+        {% include ph.html label="Photo" ratio="3/4" tone="mist" %}
+        {% include ph.html label="Photo" ratio="3/4" tone="mist" %}
+        {% include ph.html label="Photo" ratio="3/4" tone="mist" %}
+        {% include ph.html label="Photo" ratio="3/4" tone="mist" %}
+      </div>
+      <div class="about-text">
+        <p>Hi, I'm Fernanda! A Miami-based UGC creator originally from Brazil. I moved to the U.S. in 2022 with my husband and our two Pomeranians (Biscuit and Pompom 🐾).</p>
+        <p>Since our marriage, we've built a lifestyle centered around health, consistency, and growing together, so most of our days revolve around fitness, wellness routines, and creating a balanced, intentional life. We also love to travel (from Disney to NYC!) and always make time to explore new places.</p>
+        <p>Before becoming a creator, I spent nearly a decade working as a lawyer in Brazil, along with experience in therapy, customer experience, and business development, which shaped my strategic, people-centered, and persuasive approach to content.</p>
+        <p><strong>Today, I blend UX research, consumer psychology, and real-life storytelling to create content that feels authentic and drives results.</strong></p>
+        <h3>Creator Snapshot</h3>
+        <ul class="snapshot">
+          <li>Strategic UGC creator focused on wellness, fitness &amp; lifestyle</li>
+          <li>Health-focused routine (fitness, nutrition &amp; daily habits)</li>
+          <li>Trains every day: running, lifting, HIIT &amp; StairMaster</li>
+          <li>Vegetarian lifestyle &amp; wellness content</li>
+          <li>Couple lifestyle content (authentic, relatable storytelling)</li>
+          <li>Dog mom to two Pomeranians 🐾 (pet UGC available)</li>
+          <li>Brazilian creator: bilingual (English &amp; Portuguese)</li>
+          <li>Based in Miami 🌴</li>
+          <li>Background in UX research &amp; consumer psychology</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact" id="contact">
+  <div class="wrap">
+    <header class="section-head">
+      <h2 class="pill pill-mist">Contact Me</h2>
+      <p class="sub">Let's create something great together.<br><small>I'm currently available for UGC collaborations and would love to help your brand achieve its goals!</small></p>
+    </header>
+    <div class="contact-grid">
+      <div class="contact-box">
+        <h3>Content I create:</h3>
+        <ul>
+          <li>UGC video content tailored to your brand goals</li>
+          <li>Lifestyle storytelling designed to connect and convert</li>
+          <li>Pet UGC content</li>
+          <li>Couple UGC content</li>
+          <li>UGC photography</li>
+          <li>Bilingual UGC (English &amp; Portuguese)</li>
+        </ul>
+        <p class="accepting">* Currently accepting new brand collaborations *</p>
+        {% if site.formspree_id != "" %}
+        <form class="book-form" action="https://formspree.io/f/{{ site.formspree_id }}" method="POST">
+          <input name="brand" placeholder="Brand" required>
+          <input name="email" type="email" placeholder="Your email" required>
+          <textarea name="message" rows="3" placeholder="Product, number of videos, timeline"></textarea>
+          <button class="btn" type="submit">Book a UGC project</button>
+        </form>
+        {% else %}
+        <a class="btn btn-light" href="mailto:{{ site.owner.email }}?subject=UGC%20project">Book a UGC project</a>
+        {% endif %}
+      </div>
+      <div class="contact-card">
+        <div class="headshot">{% include ph.html label="Headshot" ratio="4/5" tone="mist" %}</div>
+        {% include socials.html %}
+        <a class="email-pill" href="mailto:{{ site.owner.email }}">{{ site.owner.email }}</a>
+        <p class="small">Typical response time: 24–48 hours</p>
+      </div>
+    </div>
+  </div>
+</section>
