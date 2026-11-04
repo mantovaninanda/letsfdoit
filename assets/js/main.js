@@ -23,3 +23,18 @@
     document.querySelectorAll('video').forEach(function (v) { if (v !== e.target) v.pause(); });
   }, true);
 })();
+
+// Logo wall: hide the separator dot on the last brand of each wrapped line.
+(function () {
+  var items = document.querySelectorAll('.logo-wall li');
+  if (!items.length) return;
+  function mark() {
+    items.forEach(function (li, i) {
+      var next = items[i + 1];
+      li.classList.toggle('row-end', !!next && next.offsetTop > li.offsetTop);
+    });
+  }
+  mark();
+  window.addEventListener('resize', mark);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(mark);
+})();

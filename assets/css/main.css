@@ -95,7 +95,9 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; margin: 0; }
 
 /* ---------- clients ---------- */
 .clients { background: var(--cream); padding: 30px 20px; border-top: 3px solid var(--teal-900); }
-.logo-wall { list-style: none; margin: 0 auto; padding: 0; max-width: 1040px; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 28px; }
+.logo-wall { list-style: none; margin: 0 auto; padding: 0; max-width: 1040px; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 0; }
+.logo-wall li:not(:last-child)::after { content: "•"; color: var(--blush); margin: 0 14px; font-size: .9em; }
+.logo-wall li.row-end::after { visibility: hidden; }
 .logo-wall li { font-family: var(--serif); font-size: 19px; color: var(--teal-700); white-space: nowrap; }
 .logo-wall img { height: 34px; width: auto; filter: grayscale(1); opacity: .8; }
 
@@ -146,13 +148,13 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; margin: 0; }
 .quote figcaption { font-size: 14px; }
 
 /* ---------- brasil run club highlight ---------- */
-:root { --brc-green: #0f4d33; --brc-green-2: #17633f; --brc-yellow: #f2c230; }
+:root { --brc-green: #082a1c; --brc-green-2: #0d3a27; --brc-yellow: #f2c230; }
 .brc-badge { display: inline-flex; align-items: center; gap: 8px; margin: 12px auto 0; padding: 7px 14px; border-radius: 999px;
              background: var(--brc-green); color: #fff; text-decoration: none; font-size: 14px; box-shadow: 0 6px 16px rgba(15, 77, 51, .25); }
 .brc-badge strong { color: var(--brc-yellow); }
 .brc-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--brc-yellow); box-shadow: 0 0 0 3px rgba(242, 194, 48, .3); }
 .brc { color: #fff; border-top-color: var(--brc-yellow);
-       background: radial-gradient(60% 80% at 100% 0%, rgba(242, 194, 48, .22), transparent 60%),
+       background: radial-gradient(60% 80% at 100% 0%, rgba(242, 194, 48, .10), transparent 60%),
                    linear-gradient(135deg, var(--brc-green) 0%, var(--brc-green-2) 100%); }
 .brc-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 48px; align-items: center; }
 .brc-eyebrow { text-transform: uppercase; letter-spacing: .16em; font-size: 12px; font-weight: 700; color: var(--brc-yellow); margin: 0 0 10px; }
@@ -164,7 +166,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; margin: 0; }
 .btn-brc:hover { background: #ffd451; }
 .brc-link { font-weight: 600; font-size: 15px; color: #fff; }
 .brc-stats { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-.brc-stats li { background: rgba(255, 255, 255, .08); border: 1px solid rgba(242, 194, 48, .35); border-radius: 14px; padding: 18px 16px; }
+.brc-stats li { background: rgba(255, 255, 255, .05); border: 1px solid rgba(242, 194, 48, .35); border-radius: 14px; padding: 18px 16px; }
 .brc-stats strong { display: block; font-family: var(--serif); font-size: 34px; color: var(--brc-yellow); line-height: 1.1; }
 .brc-stats span { font-size: 14px; opacity: .9; }
 
