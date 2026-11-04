@@ -24,7 +24,7 @@ _config.yml          site title/description, owner links, formspree_id (empty = 
 _data/videos.yml     featured videos, in display order. client:false shows a "Spec ad" tag. featured:true = in the first 9 on mobile
 _data/clients.yml    logo wall: REAL clients only, never spec brands
 _data/testimonials.yml  brand quotes, word for word. Never publish a sender's email address
-_data/brc.yml        Brasil Run Club highlight (title, stats, BRC email). Shown as a hero badge + the green #brc section
+_data/brc.yml        Brasil Run Club highlight (title, stats, BRC email). Shown as a hero badge + the green #brc section (between UGC Photography and About)
 index.html           all sections (hero, clients, work, trust, reviews, process, pets, photos, about, contact)
 _includes/           head (SEO + og tags), nav, footer, socials, ph (placeholder box)
 assets/css/main.css  all styles. Palette tokens at the top (from her Canva site)

@@ -143,27 +143,6 @@ layout: default
   </div>
 </section>
 
-<!-- ============ BRASIL RUN CLUB ============ -->
-{% assign brc = site.data.brc %}
-<section class="section brc" id="brc">
-  <div class="wrap brc-grid">
-    <div class="brc-copy">
-      <p class="brc-eyebrow">Beyond UGC</p>
-      <h2>{{ brc.title }} at <span>{{ brc.org }}</span></h2>
-      <p>I lead brand partnerships for Brasil Run Club, a running and wellness community in NYC and Miami. Every month we host a 5K group run followed by a recovery and social experience, and I connect brands with the runners who love them.</p>
-      <p>Working on the brand side every day keeps my UGC focused on what brands actually need.</p>
-      <div class="brc-actions">
-        <a class="btn btn-brc" href="mailto:{{ brc.email }}?subject=Brasil%20Run%20Club%20partnership">Partner with BRC</a>
-        <a class="brc-link" href="https://www.instagram.com/{{ brc.instagram }}/" target="_blank" rel="noopener">@{{ brc.instagram }}</a>
-        <a class="brc-link" href="https://www.instagram.com/{{ brc.instagram_miami }}/" target="_blank" rel="noopener">@{{ brc.instagram_miami }}</a>
-      </div>
-    </div>
-    <ul class="brc-stats">
-      {% for st in brc.stats %}<li><strong>{{ st.value }}</strong><span>{{ st.label }}</span></li>{% endfor %}
-    </ul>
-  </div>
-</section>
-
 <!-- ============ HOW IT WORKS ============ -->
 <section class="section process">
   <div class="wrap">
@@ -223,6 +202,27 @@ layout: default
       {% endfor %}
     </div>
     <div class="center"><a class="btn" href="#contact">Book a UGC project</a></div>
+  </div>
+</section>
+
+<!-- ============ BRASIL RUN CLUB ============ -->
+{% assign brc = site.data.brc %}
+<section class="section brc" id="brc">
+  <div class="wrap brc-grid">
+    <div class="brc-copy">
+      <p class="brc-eyebrow">Beyond UGC</p>
+      <h2>{{ brc.title }} at <span>{{ brc.org }}</span></h2>
+      <p>I lead brand partnerships for Brasil Run Club, a running and wellness community in NYC and Miami. Every month we host a 5K group run followed by a recovery and social experience, and I connect brands with the runners who love them.</p>
+      <p>Working on the brand side every day keeps my UGC focused on what brands actually need.</p>
+      <div class="brc-actions">
+        <a class="btn btn-brc" href="mailto:{{ brc.email }}?subject=Brasil%20Run%20Club%20partnership">Partner with BRC</a>
+        <a class="brc-link" href="https://www.instagram.com/{{ brc.instagram }}/" target="_blank" rel="noopener">@{{ brc.instagram }}</a>
+        <a class="brc-link" href="https://www.instagram.com/{{ brc.instagram_miami }}/" target="_blank" rel="noopener">@{{ brc.instagram_miami }}</a>
+      </div>
+    </div>
+    <ul class="brc-stats">
+      {% for st in brc.stats %}<li><strong>{{ st.value }}</strong><span>{{ st.label }}</span></li>{% endfor %}
+    </ul>
   </div>
 </section>
 
