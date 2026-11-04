@@ -39,5 +39,6 @@ og/og-default.html   source of assets/img/og-default.jpg (1200x630). Re-render w
 - **Spec pieces** (Ninja, Abercrombie, Royal Canin, Strava) are always tagged "Spec ad" and never appear on the logo wall. Built is left out entirely: it contains collagen, which conflicts with her vegetarian positioning.
 - Her goal niche is wellness, nutrition and fitness, so the video grid shows those first and pet after.
 - She trains every day (running, lifting, HIIT, StairMaster). Copy says "every day."
-- Keep her brand separate from Icaro's (@icarobichir). No cross-links unless asked.
+- Keep her brand separate from Icaro's (@icarobichir). No cross-links unless asked. Exception: her TikTok link is @shelftherapystudio, the couple account (Icaro's call, 2026-11-03), because she doesn't use @heyitsme.nanda.
+- Decided 2026-11-03: booking stays as the email button (no form), the spec videos stay, the logo wall is text-only, and the copy claims (UX research, Sydney Mohni line) stay for now.
 - Copy style: plain human language, no em dashes in new copy, no AI buzzwords.

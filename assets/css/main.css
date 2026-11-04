@@ -136,8 +136,6 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; margin: 0; }
 .stars { color: var(--gold); letter-spacing: 2px; }
 .quotes { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px 40px; }
 .quote { position: relative; margin: 0; background: #fff; border: 8px solid var(--blush-100); border-radius: 16px; padding: 22px 24px; }
-.quote::before { content: ""; position: absolute; left: -26px; top: 40%; border: 14px solid transparent; border-right: 18px solid var(--blush-100); }
-.quote-right::before { left: auto; right: -26px; border-right-color: transparent; border-left: 18px solid var(--blush-100); }
 .quote blockquote { margin: 0 0 12px; font-family: var(--serif); font-size: 18px; line-height: 1.5; }
 .quote figcaption { font-size: 14px; }
 
@@ -208,7 +206,6 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; margin: 0; }
   .steps { grid-template-columns: repeat(2, 1fr); }
   .photo-grid { grid-template-columns: repeat(3, 1fr); }
   .quotes { grid-template-columns: 1fr; }
-  .quote::before { display: none; }
 }
 @media (max-width: 760px) {
   .nav-links a:not(.btn) { display: none; }

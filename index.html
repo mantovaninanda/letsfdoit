@@ -125,7 +125,7 @@ layout: default
     </header>
     <div class="quotes">
       {% for t in site.data.testimonials %}
-      <figure class="quote{% cycle '', ' quote-right' %}">
+      <figure class="quote">
         <blockquote>“{{ t.quote }}”</blockquote>
         <figcaption><strong>{{ t.name }}</strong>{% if t.role != "" %}, {{ t.role }}{% endif %} · {{ t.brand }}</figcaption>
       </figure>
