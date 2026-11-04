@@ -59,7 +59,13 @@ layout: default
           <span class="card-brand">{{ v.brand }}</span>
         </div>
         <div class="card-media">
-          {% if v.file != "" %}
+          {% if v.youtube %}
+          <div class="embed embed-yt"><iframe src="https://www.youtube-nocookie.com/embed/{{ v.youtube }}?rel=0&modestbranding=1&playsinline=1" title="{{ v.brand }} UGC video" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+          {% elsif v.tiktok %}
+          <div class="embed embed-tt"><iframe src="https://www.tiktok.com/player/v1/{{ v.tiktok }}?controls=1&progress_bar=1&play_button=1&volume_control=1&fullscreen_button=1&music_info=0&description=0&rel=0&native_context_menu=0&closed_caption=0" title="{{ v.brand }} UGC video" loading="lazy" allow="fullscreen" allowfullscreen></iframe></div>
+          {% elsif v.instagram %}
+          <div class="embed embed-ig"><blockquote class="instagram-media" data-instgrm-permalink="{{ v.instagram }}" data-instgrm-version="14"><a href="{{ v.instagram }}" target="_blank" rel="noopener">Watch on Instagram</a></blockquote></div>
+          {% elsif v.file %}
           <video controls controlsList="nodownload" playsinline preload="none"{% if v.poster %} poster="{{ '/assets/img/posters/' | append: v.poster | relative_url }}"{% endif %}>
             <source src="{{ '/assets/video/' | append: v.file | relative_url }}" type="video/mp4">
           </video>
@@ -68,6 +74,7 @@ layout: default
           {% endif %}
           {% unless v.client %}<span class="spec-tag">Spec ad</span>{% endunless %}
         </div>
+        {% if v.brand_posted %}<p class="card-note">Posted by {{ v.brand }} on their account</p>{% endif %}
       </article>
       {% endfor %}
     </div>

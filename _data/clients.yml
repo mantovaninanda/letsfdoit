@@ -1,6 +1,8 @@
 # Logo wall: REAL clients only (never spec brands). logo: SVG/PNG in assets/img/logos/. Empty = text wordmark.
 - name: Stay Wyld Organics
   logo: ""
+- name: Dance Water
+  logo: ""
 - name: Calmamix
   logo: ""
 - name: BeeFree
