@@ -216,8 +216,11 @@ layout: default
       <p>Working on the brand side every day keeps my UGC focused on what brands actually need.</p>
       <div class="brc-actions">
         <a class="btn btn-brc" href="mailto:{{ brc.email }}?subject=Brasil%20Run%20Club%20partnership">Partner with BRC</a>
-        <a class="brc-link" href="https://www.instagram.com/{{ brc.instagram }}/" target="_blank" rel="noopener">@{{ brc.instagram }}</a>
-        <a class="brc-link" href="https://www.instagram.com/{{ brc.instagram_miami }}/" target="_blank" rel="noopener">@{{ brc.instagram_miami }}</a>
+        <p class="brc-links">
+          <a href="{{ brc.website }}" target="_blank" rel="noopener">brasilrunclub.com</a>
+          <a href="https://www.instagram.com/{{ brc.instagram }}/" target="_blank" rel="noopener">@{{ brc.instagram }}</a>
+          <a href="https://www.instagram.com/{{ brc.instagram_miami }}/" target="_blank" rel="noopener">@{{ brc.instagram_miami }}</a>
+        </p>
       </div>
     </div>
     <ul class="brc-stats">

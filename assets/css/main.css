@@ -161,10 +161,12 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; margin: 0; }
 .brc h2 { font-size: clamp(32px, 4.4vw, 48px); line-height: 1.08; margin-bottom: 18px; }
 .brc h2 span { color: var(--brc-yellow); font-style: italic; }
 .brc-copy p { font-size: 17px; margin: 0 0 14px; max-width: 560px; }
-.brc-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; margin-top: 22px; }
+.brc-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; margin-top: 22px; }
 .btn-brc { background: var(--brc-yellow); color: var(--brc-green); }
 .btn-brc:hover { background: #ffd451; }
-.brc-link { font-weight: 600; font-size: 15px; color: #fff; }
+.brc-links { display: flex; flex-wrap: wrap; align-items: center; margin: 0; font-weight: 600; font-size: 15px; }
+.brc-links a { color: #fff; }
+.brc-links a:not(:last-child)::after { content: "•"; color: var(--brc-yellow); margin: 0 12px; display: inline-block; text-decoration: none; }
 .brc-stats { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 .brc-stats li { background: rgba(255, 255, 255, .05); border: 1px solid rgba(242, 194, 48, .35); border-radius: 14px; padding: 18px 16px; }
 .brc-stats strong { display: block; font-family: var(--serif); font-size: 34px; color: var(--brc-yellow); line-height: 1.1; }
