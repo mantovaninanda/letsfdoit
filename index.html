@@ -18,6 +18,7 @@ layout: default
       <p class="hero-pill">Blending UX, psychology &amp; lifestyle to create content that makes <strong>real impact</strong>.</p>
       <p class="hero-loc"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-7.2 7-12a7 7 0 1 0-14 0c0 4.8 7 12 7 12z" fill="currentColor"/><circle cx="12" cy="10" r="2.5" fill="#fff"/></svg> Miami</p>
       <p class="hero-cred"><em><strong>UGC Mastery Academy</strong></em> graduate<br><span>Trained by Sydney Mohni: NYC billboard-featured creator</span></p>
+      <a class="brc-badge" href="#brc"><span class="brc-dot" aria-hidden="true"></span>{{ site.data.brc.title }} · <strong>{{ site.data.brc.org }}</strong></a>
       <hr class="hero-rule">
       {% include socials.html %}
       <a class="btn" href="#contact">Book a UGC project</a>
@@ -139,6 +140,27 @@ layout: default
       {% endfor %}
     </div>
     <div class="center"><a class="btn" href="#contact">Book a UGC project</a></div>
+  </div>
+</section>
+
+<!-- ============ BRASIL RUN CLUB ============ -->
+{% assign brc = site.data.brc %}
+<section class="section brc" id="brc">
+  <div class="wrap brc-grid">
+    <div class="brc-copy">
+      <p class="brc-eyebrow">Beyond UGC</p>
+      <h2>{{ brc.title }} at <span>{{ brc.org }}</span></h2>
+      <p>I lead brand partnerships for Brasil Run Club, a running and wellness community in NYC and Miami. Every month we host a 5K group run followed by a recovery and social experience, and I connect brands with the runners who love them.</p>
+      <p>Working on the brand side every day keeps my UGC focused on what brands actually need.</p>
+      <div class="brc-actions">
+        <a class="btn btn-brc" href="mailto:{{ brc.email }}?subject=Brasil%20Run%20Club%20partnership">Partner with BRC</a>
+        <a class="brc-link" href="https://www.instagram.com/{{ brc.instagram }}/" target="_blank" rel="noopener">@{{ brc.instagram }}</a>
+        <a class="brc-link" href="https://www.instagram.com/{{ brc.instagram_miami }}/" target="_blank" rel="noopener">@{{ brc.instagram_miami }}</a>
+      </div>
+    </div>
+    <ul class="brc-stats">
+      {% for st in brc.stats %}<li><strong>{{ st.value }}</strong><span>{{ st.label }}</span></li>{% endfor %}
+    </ul>
   </div>
 </section>
 

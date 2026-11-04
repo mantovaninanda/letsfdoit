@@ -145,6 +145,29 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; margin: 0; }
 .quote blockquote { margin: 0 0 12px; font-family: var(--serif); font-size: 18px; line-height: 1.5; }
 .quote figcaption { font-size: 14px; }
 
+/* ---------- brasil run club highlight ---------- */
+:root { --brc-green: #0f4d33; --brc-green-2: #17633f; --brc-yellow: #f2c230; }
+.brc-badge { display: inline-flex; align-items: center; gap: 8px; margin: 12px auto 0; padding: 7px 14px; border-radius: 999px;
+             background: var(--brc-green); color: #fff; text-decoration: none; font-size: 14px; box-shadow: 0 6px 16px rgba(15, 77, 51, .25); }
+.brc-badge strong { color: var(--brc-yellow); }
+.brc-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--brc-yellow); box-shadow: 0 0 0 3px rgba(242, 194, 48, .3); }
+.brc { color: #fff; border-top-color: var(--brc-yellow);
+       background: radial-gradient(60% 80% at 100% 0%, rgba(242, 194, 48, .22), transparent 60%),
+                   linear-gradient(135deg, var(--brc-green) 0%, var(--brc-green-2) 100%); }
+.brc-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 48px; align-items: center; }
+.brc-eyebrow { text-transform: uppercase; letter-spacing: .16em; font-size: 12px; font-weight: 700; color: var(--brc-yellow); margin: 0 0 10px; }
+.brc h2 { font-size: clamp(32px, 4.4vw, 48px); line-height: 1.08; margin-bottom: 18px; }
+.brc h2 span { color: var(--brc-yellow); font-style: italic; }
+.brc-copy p { font-size: 17px; margin: 0 0 14px; max-width: 560px; }
+.brc-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; margin-top: 22px; }
+.btn-brc { background: var(--brc-yellow); color: var(--brc-green); }
+.btn-brc:hover { background: #ffd451; }
+.brc-link { font-weight: 600; font-size: 15px; color: #fff; }
+.brc-stats { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.brc-stats li { background: rgba(255, 255, 255, .08); border: 1px solid rgba(242, 194, 48, .35); border-radius: 14px; padding: 18px 16px; }
+.brc-stats strong { display: block; font-family: var(--serif); font-size: 34px; color: var(--brc-yellow); line-height: 1.1; }
+.brc-stats span { font-size: 14px; opacity: .9; }
+
 /* ---------- process ---------- */
 .process { background: var(--cream); }
 .steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; }
@@ -208,7 +231,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; margin: 0; }
   .hero-reel { width: 100%; max-width: 260px; margin: 0 auto; }
   .hit-play { position: static; display: table; margin: 10px auto 0; }
   .work-grid { grid-template-columns: repeat(2, 1fr); gap: 28px 20px; }
-  .trust-grid, .about-grid, .contact-grid { grid-template-columns: 1fr; }
+  .trust-grid, .about-grid, .contact-grid, .brc-grid { grid-template-columns: 1fr; }
   .steps { grid-template-columns: repeat(2, 1fr); }
   .photo-grid { grid-template-columns: repeat(3, 1fr); }
   .quotes { grid-template-columns: 1fr; }
