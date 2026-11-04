@@ -1,0 +1,110 @@
+# Featured UGC videos, in display order (wellness first, pet after). ONE card per brand.
+# client:   true = real paid/gifted client work. false = spec piece (shows a "Spec ad" tag).
+# niche:    nutrition | wellness | fitness | lifestyle | pet  (drives the filter chips)
+# featured: true = shown in the first 9 on mobile.
+# Video source, use ONE of these (first one set wins):
+#   youtube:   video ID (unlisted is fine). Preferred going forward: no downloadable file.
+#   tiktok:    video ID (must be PUBLIC. "Ads only" videos don't play in embeds; tested 2026-11-03)
+#   instagram: post/reel URL (public)
+#   file:      MP4 in assets/video/ (720x1280 H.264, 8-bit yuv420p, +faststart)
+# Nothing set = placeholder card.
+# brand_posted: true = the brand itself posted her video on their account (shown as a small note).
+
+- brand: Stay Wyld Organics
+  format: Testimonial
+  niche: wellness
+  client: true
+  hook: "Yes, your 3PM crash is optional"
+  instagram: https://www.instagram.com/reel/Da3IJLbv62a/
+  brand_posted: true
+  featured: true
+- brand: Dance Water
+  format: Unboxing
+  niche: wellness
+  client: true
+  hook: ""
+  instagram: https://www.instagram.com/reel/DcoNnx6ARaC/
+  featured: true
+- brand: Calmamix
+  format: Product demo
+  niche: nutrition
+  client: true
+  hook: ""
+  featured: true
+- brand: BeeFree Gluten-Free Bakery
+  format: Product demo
+  niche: nutrition
+  client: true
+  hook: "Stop wasting money with SAD snacks!"
+  featured: true
+- brand: Authen Running
+  format: B-roll with VO
+  niche: fitness
+  client: true
+  hook: "Runners deserve better"
+  featured: true
+- brand: Brasil Run Club
+  format: Event recap
+  niche: fitness
+  client: true
+  hook: ""
+  instagram: https://www.instagram.com/reel/DdeoRQ9Brg6/
+  featured: true
+- brand: Pirani
+  format: B-roll with VO
+  niche: fitness
+  client: true
+  hook: "Guess who's thirsty too?"
+- brand: Strava
+  format: Green screen
+  niche: fitness
+  client: false
+  hook: "Real progress, not just workouts!"
+  featured: true
+- brand: Ninja Blast Portable Blender
+  format: Product demo
+  niche: nutrition
+  client: false
+  hook: "Stop drinking clumps"
+- brand: Sundays For Dogs
+  format: Testimonial
+  niche: pet
+  client: true
+  hook: "Eight years being a hypocrite"
+  tiktok: "7645430179573042446"
+  featured: true
+- brand: Finn
+  format: Testimonial
+  niche: pet
+  client: true
+  hook: ""
+  instagram: https://www.instagram.com/reel/DY8EThbOJ5f/
+- brand: PawChamp
+  format: Testimonial
+  niche: pet
+  client: true
+  hook: ""
+  instagram: https://www.instagram.com/p/DbPRol-B3pr/
+  brand_posted: true
+- brand: PatterPups
+  format: Unboxing
+  niche: pet
+  client: true
+  hook: ""
+  instagram: https://www.instagram.com/p/DefM4bcBwhk/
+- brand: Vidge Pets
+  format: Testimonial
+  niche: pet
+  client: true
+  hook: ""
+- brand: King Kanine
+  format: B-roll with VO
+  niche: pet
+  client: true
+  hook: "Poor baby is so anxious!"
+# Not used (one card per brand, picked 2026-11-03):
+#   Sundays TikTok 7696705475001240845 ("Do you know?", feature-led, 5 likes) vs the kept "Eight years of kibble" (28 likes, 12 comments, 14 shares).
+#   Stay Wyld reel DdZfTprhAi_ (19s #ad discount promo) vs the kept brand-posted 3PM reel (36s, stronger hook).
+#   Pelsbarn: brand holds the rights and uses the video for ads only (Fernanda, 2026-11-03).
+#   Abercrombie and Royal Canin spec pieces: old portfolio pieces, removed at Fernanda's request (2026-11-03).
+# Built PUFF Bar spec is intentionally left out: Built contains collagen, which conflicts with her vegetarian positioning.

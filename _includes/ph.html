@@ -1,0 +1,4 @@
+{% comment %}Placeholder box until her real photo/video arrives. include.label, include.ratio (e.g. 9/16), include.tone (teal|blush|cream){% endcomment %}
+<div class="ph ph-{{ include.tone | default: 'teal' }}" style="aspect-ratio: {{ include.ratio | default: '4/5' }}">
+  <span>{{ include.label }}</span>
+</div>
