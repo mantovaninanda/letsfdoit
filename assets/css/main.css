@@ -148,13 +148,13 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; margin: 0; }
 .quote figcaption { font-size: 14px; }
 
 /* ---------- brasil run club highlight ---------- */
-:root { --brc-green: #082a1c; --brc-green-2: #0d3a27; --brc-yellow: #f2c230; }
+:root { --brc-green: #082a1c; --brc-green-2: #0d3a27; --brc-yellow: #c9a43e; }
 .brc-badge { display: inline-flex; align-items: center; gap: 8px; margin: 12px auto 0; padding: 7px 14px; border-radius: 999px;
              background: var(--brc-green); color: #fff; text-decoration: none; font-size: 14px; box-shadow: 0 6px 16px rgba(15, 77, 51, .25); }
 .brc-badge strong { color: var(--brc-yellow); }
-.brc-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--brc-yellow); box-shadow: 0 0 0 3px rgba(242, 194, 48, .3); }
+.brc-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--brc-yellow); box-shadow: 0 0 0 3px rgba(201, 164, 62, .3); }
 .brc { color: #fff; border-top-color: var(--brc-yellow);
-       background: radial-gradient(60% 80% at 100% 0%, rgba(242, 194, 48, .10), transparent 60%),
+       background: radial-gradient(60% 80% at 100% 0%, rgba(201, 164, 62, .10), transparent 60%),
                    linear-gradient(135deg, var(--brc-green) 0%, var(--brc-green-2) 100%); }
 .brc-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 48px; align-items: center; }
 .brc-eyebrow { text-transform: uppercase; letter-spacing: .16em; font-size: 12px; font-weight: 700; color: var(--brc-yellow); margin: 0 0 10px; }
@@ -163,12 +163,12 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; margin: 0; }
 .brc-copy p { font-size: 17px; margin: 0 0 14px; max-width: 560px; }
 .brc-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; margin-top: 22px; }
 .btn-brc { background: var(--brc-yellow); color: var(--brc-green); }
-.btn-brc:hover { background: #ffd451; }
+.btn-brc:hover { background: #d6b452; }
 .brc-links { display: flex; flex-wrap: wrap; align-items: center; margin: 0; font-weight: 600; font-size: 15px; }
 .brc-links a { color: #fff; }
 .brc-links a:not(:last-child)::after { content: "•"; color: var(--brc-yellow); margin: 0 12px; display: inline-block; text-decoration: none; }
 .brc-stats { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-.brc-stats li { background: rgba(255, 255, 255, .05); border: 1px solid rgba(242, 194, 48, .35); border-radius: 14px; padding: 18px 16px; }
+.brc-stats li { background: rgba(255, 255, 255, .05); border: 1px solid rgba(201, 164, 62, .35); border-radius: 14px; padding: 18px 16px; }
 .brc-stats strong { display: block; font-family: var(--serif); font-size: 34px; color: var(--brc-yellow); line-height: 1.1; }
 .brc-stats span { font-size: 14px; opacity: .9; }
 
