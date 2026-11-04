@@ -102,22 +102,9 @@
   niche: pet
   client: true
   hook: "Poor baby is so anxious!"
-- brand: Pelsbarn
-  format: UGC video
-  niche: pet
-  client: true
-  hook: ""
-- brand: Abercrombie Curve Love Jeans
-  format: Skit
-  niche: lifestyle
-  client: false
-  hook: "Why so hard?"
-- brand: Royal Canin Hydrolyzed Protein
-  format: Testimonial
-  niche: pet
-  client: false
-  hook: "Watching my dog..."
 # Not used (one card per brand, picked 2026-11-03):
 #   Sundays TikTok 7696705475001240845 ("Do you know?", feature-led, 5 likes) vs the kept "Eight years of kibble" (28 likes, 12 comments, 14 shares).
 #   Stay Wyld reel DdZfTprhAi_ (19s #ad discount promo) vs the kept brand-posted 3PM reel (36s, stronger hook).
+#   Pelsbarn: brand holds the rights and uses the video for ads only (Fernanda, 2026-11-03).
+#   Abercrombie and Royal Canin spec pieces: old portfolio pieces, removed at Fernanda's request (2026-11-03).
 # Built PUFF Bar spec is intentionally left out: Built contains collagen, which conflicts with her vegetarian positioning.

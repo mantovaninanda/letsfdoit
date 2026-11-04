@@ -36,7 +36,7 @@ og/og-default.html   source of assets/img/og-default.jpg (1200x630). Re-render w
 
 - Every `<video>` gets `controlsList="nodownload"`, `playsinline` and `preload="none"`.
 - Convert videos to 720x1280 H.264, 8-bit yuv420p, `+faststart`. That's the same ffmpeg standard as icarobichir.com.
-- **Spec pieces** (Ninja, Abercrombie, Royal Canin, Strava) are always tagged "Spec ad" and never appear on the logo wall. Built is left out entirely: it contains collagen, which conflicts with her vegetarian positioning.
+- **Spec pieces** (Ninja, Strava) are always tagged "Spec ad" and never appear on the logo wall. Built is left out entirely: it contains collagen, which conflicts with her vegetarian positioning. Abercrombie and Royal Canin were removed (old spec pieces), and so was Pelsbarn, because the brand holds the video rights (ads only). Pelsbarn stays on the logo wall, since it's still a real client.
 - Her goal niche is wellness, nutrition and fitness, so the video grid shows those first and pet after.
 - She trains every day (running, lifting, HIIT, StairMaster). Copy says "every day."
 - Keep her brand separate from Icaro's (@icarobichir). No cross-links unless asked. Exception: her TikTok link is @shelftherapystudio, the couple account (Icaro's call, 2026-11-03), because she doesn't use @heyitsme.nanda.
